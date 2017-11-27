@@ -17,12 +17,12 @@ public class WeatherData implements Subject {
     }
 
     @Override
-    public void registerObserver(Observer o) {
+    public synchronized void registerObserver(Observer o) {
         observers.add(o);
     }
 
     @Override
-    public void removeObserver(Observer o) {
+    public synchronized void removeObserver(Observer o) {
         int i = observers.indexOf(o);
         if (i >= 0) {
             observers.remove(o);

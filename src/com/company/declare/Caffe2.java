@@ -8,6 +8,6 @@ public class Caffe2 extends Beverage {
 
     @Override
     public double cost() {
-        return 2.99D;
+        return 3.99D;
     }
 }
